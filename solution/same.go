@@ -1,5 +1,11 @@
 package solution
 
+/*
+Write a function called same, which accepts two arrays.
+The function should return true if every value in the array has it's corresponding value squared in the second array.
+The frequency of values must be the same.
+*/
+
 func IsSame(slice1, slice2 []int) bool {
 
 	mapSlice1 := make(map[int]int)
@@ -26,8 +32,8 @@ func IsSame(slice1, slice2 []int) bool {
 	return true
 }
 
-func increaseMapSlice(sliece []int, mapSlice map[int]int) {
-	for _, key := range sliece {
+func increaseMapSlice(slice []int, mapSlice map[int]int) {
+	for _, key := range slice {
 		if _, found := mapSlice[key]; found {
 			mapSlice[key] += 1
 		} else {
