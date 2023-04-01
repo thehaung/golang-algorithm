@@ -3,7 +3,7 @@ image: go-1.19
 on:
   push:
     branches: [ "master" ]
-  pull_requests:
+  pull_request:
     branches: [ "master" ]
 
 job:
